@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/all.min.css" />
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/output.css" />
+    <link rel="shortcut icon" href="./src/img/logo.png" />
+    <title>YummyExam</title>
+  </head>
+  <body class="bg-black">
+    <div
+      class="loading-screen z-50 fixed top-0 start-0 end-0 bottom-0 bg-black flex justify-center items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div
+      class="side-nav-menu h-[100vh] fixed flex top-0 z-20 text-white bg-black"
+    >
+      <div
+        class="nav-tab flex flex-column justify-between h-[100vh] w-[100%] p-4"
+      >
+        <div class="links">
+          <ul class="list-unstyled overflow-hidden">
+            <li class="py-2 position-relative cursor-pointer Search">Search</li>
+            <li class="py-2 position-relative cursor-pointer Categories">
+              Categories
+            </li>
+            <li class="py-2 position-relative cursor-pointer Area">Area</li>
+            <li class="py-2 position-relative cursor-pointer Ingredients">
+              Ingredients
+            </li>
+            <li class="py-2 position-relative cursor-pointer Contact">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook cursor-pointer"></i>
+            <i class="fa-brands fa-twitter cursor-pointer"></i>
+            <i class="fa-solid fa-globe cursor-pointer"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header z-10 flex flex-column justify-between items-center py-4 px-2 w-[55px] bg-white text-black"
+      >
+        <img class="logo w-[100%]" src="./src/img/logo.png" alt="" srcset="" />
+        <i class="fa-solid open-close-icon fa-2x fa-x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block cursor-pointer"></i>
+          <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container w-75" id="DisplyContainer"></div>
+    <div class="min-h-[100vh] relative">
+      <div
+        class="inner-loading-screen absolute flex top-0 start-0 end-0 bottom-0 bg-black justify-center items-center"
+      >
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </div>
+      <div class="container">
+        <div class="row py-9 pl-11 mealContainer"></div>
+      </div>
+    </div>
+
+    <script src="./src/js/jquery-3.7.1.min.js"></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
